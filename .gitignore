@@ -1,0 +1,26 @@
+# Build
+build/
+**/build/
+cmake-build-*/
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+CPackSourceConfig.cmake
+
+# Binaries / generated
+*.o
+*.out
+*.exe
+*.bin
+*.index
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS/IDE
+.DS_Store
+.vscode/
+.idea/
