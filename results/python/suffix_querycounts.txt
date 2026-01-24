@@ -4,28 +4,28 @@ Suffix Array - Query Count Benchmark
 Reference length: 100,000,000 bp
 1,000 queries of length 100 bp
 
-Construction time for suffix array: 19.0762s
+Construction time for suffix array: 19.7775s
 
 Results for 1,000 queries: 
-Construction time: 19.0762s
+Construction time: 19.7775s
 Search time:       0.0199s
-Total time:        19.0960s
+Total time:        19.7974s
 Hits found:        448
 	Command being timed: "python3 suffixarray_search.py 1000"
-	User time (seconds): 19.46
-	System time (seconds): 1.82
+	User time (seconds): 20.14
+	System time (seconds): 1.69
 	Percent of CPU this job got: 99%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:21.31
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:21.86
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4828676
+	Maximum resident set size (kbytes): 4828824
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 840511
-	Voluntary context switches: 22
-	Involuntary context switches: 2165
+	Minor (reclaiming a frame) page faults: 841050
+	Voluntary context switches: 23
+	Involuntary context switches: 2250
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 8
@@ -39,28 +39,28 @@ Hits found:        448
 Reference length: 100,000,000 bp
 10,000 queries of length 100 bp
 
-Construction time for suffix array: 19.3964s
+Construction time for suffix array: 19.9010s
 
 Results for 10,000 queries: 
-Construction time: 19.3964s
-Search time:       0.1817s
-Total time:        19.5781s
+Construction time: 19.9010s
+Search time:       0.1841s
+Total time:        20.0851s
 Hits found:        4,456
 	Command being timed: "python3 suffixarray_search.py 10000"
-	User time (seconds): 19.85
-	System time (seconds): 1.71
+	User time (seconds): 20.90
+	System time (seconds): 1.86
 	Percent of CPU this job got: 99%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:21.59
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:22.78
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4828716
+	Maximum resident set size (kbytes): 4828812
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 840512
-	Voluntary context switches: 23
-	Involuntary context switches: 2212
+	Minor (reclaiming a frame) page faults: 840885
+	Voluntary context switches: 18
+	Involuntary context switches: 2362
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 8
@@ -74,28 +74,28 @@ Hits found:        4,456
 Reference length: 100,000,000 bp
 100,000 queries of length 100 bp
 
-Construction time for suffix array: 19.4953s
+Construction time for suffix array: 19.2941s
 
 Results for 100,000 queries: 
-Construction time: 19.4953s
-Search time:       1.8010s
-Total time:        21.2963s
+Construction time: 19.2941s
+Search time:       1.7909s
+Total time:        21.0850s
 Hits found:        45,334
 	Command being timed: "python3 suffixarray_search.py 100000"
-	User time (seconds): 21.59
-	System time (seconds): 1.86
+	User time (seconds): 21.44
+	System time (seconds): 1.79
 	Percent of CPU this job got: 99%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:23.48
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:23.26
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4828668
+	Maximum resident set size (kbytes): 4829324
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 840575
-	Voluntary context switches: 32
-	Involuntary context switches: 2391
+	Minor (reclaiming a frame) page faults: 841109
+	Voluntary context switches: 33
+	Involuntary context switches: 2385
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 8

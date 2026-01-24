@@ -35,6 +35,6 @@ construction_time = time.time() - start
 print(f"FM-index construction completed in {construction_time:.4f}s")
 
 # Save the index
-index_path = "../data/fm_index.bin"
+index_path = "../data/fm_index_partial.bin"
 fm_index.save(index_path)
 print(f"FM-index saved to {index_path}.")

@@ -4,24 +4,24 @@ FM-Index - Query Count Benchmark
 Loading 2FM-Index ... done
 Search completed.
 Total Hits: 45335
-Search Time: 1.27622s
-	Command being timed: "./build/bin/fmindex_search --index hg38_partial.index --query data/illumina_reads_100.fasta.gz --query_ct 1000 --errors 0"
-	User time (seconds): 1.38
-	System time (seconds): 0.07
-	Percent of CPU this job got: 73%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:01.96
+Search Time: 0.977098s
+	Command being timed: "./build/bin/fmindex_search --index data/hg38_partial.index --query data/illumina_reads_100.fasta.gz --query_ct 1000 --errors 0"
+	User time (seconds): 1.20
+	System time (seconds): 0.05
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:01.27
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 83184
+	Maximum resident set size (kbytes): 83124
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 10
-	Minor (reclaiming a frame) page faults: 6399
-	Voluntary context switches: 85
-	Involuntary context switches: 142
+	Minor (reclaiming a frame) page faults: 6398
+	Voluntary context switches: 18
+	Involuntary context switches: 127
 	Swaps: 0
-	File system inputs: 127688
+	File system inputs: 1512
 	File system outputs: 24
 	Socket messages sent: 0
 	Socket messages received: 0
@@ -33,22 +33,22 @@ Search Time: 1.27622s
 Loading 2FM-Index ... done
 Search completed.
 Total Hits: 45335
-Search Time: 0.989302s
-	Command being timed: "./build/bin/fmindex_search --index hg38_partial.index --query data/illumina_reads_100.fasta.gz --query_ct 10000 --errors 0"
-	User time (seconds): 1.13
+Search Time: 0.98346s
+	Command being timed: "./build/bin/fmindex_search --index data/hg38_partial.index --query data/illumina_reads_100.fasta.gz --query_ct 10000 --errors 0"
+	User time (seconds): 1.11
 	System time (seconds): 0.04
 	Percent of CPU this job got: 99%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:01.17
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:01.16
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 83328
+	Maximum resident set size (kbytes): 83360
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 5929
-	Voluntary context switches: 9
-	Involuntary context switches: 117
+	Minor (reclaiming a frame) page faults: 5931
+	Voluntary context switches: 10
+	Involuntary context switches: 118
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 24
@@ -62,9 +62,9 @@ Search Time: 0.989302s
 Loading 2FM-Index ... done
 Search completed.
 Total Hits: 45335
-Search Time: 1.08339s
-	Command being timed: "./build/bin/fmindex_search --index hg38_partial.index --query data/illumina_reads_100.fasta.gz --query_ct 100000 --errors 0"
-	User time (seconds): 1.33
+Search Time: 1.12572s
+	Command being timed: "./build/bin/fmindex_search --index data/hg38_partial.index --query data/illumina_reads_100.fasta.gz --query_ct 100000 --errors 0"
+	User time (seconds): 1.32
 	System time (seconds): 0.05
 	Percent of CPU this job got: 99%
 	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:01.38
@@ -72,12 +72,12 @@ Search Time: 1.08339s
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 83668
+	Maximum resident set size (kbytes): 83632
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 6009
+	Minor (reclaiming a frame) page faults: 6007
 	Voluntary context switches: 8
-	Involuntary context switches: 137
+	Involuntary context switches: 139
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 24

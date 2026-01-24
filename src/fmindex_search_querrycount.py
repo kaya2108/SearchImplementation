@@ -42,7 +42,7 @@ query_count = int(sys.argv[1])
 
 # Load FM-index
 start_load = time.time()
-fm_index = iv.fmindex("../data/fm_index.bin")
+fm_index = iv.fmindex("../data/fm_index_partial.bin")
 load_time = time.time() - start_load
 print(f"FM-index loaded in {load_time:.4f}s")
 

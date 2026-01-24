@@ -1,6 +1,6 @@
 System Information
 CPU(s):                                  56
 Model name:                              Intel(R) Xeon(R) CPU E5-2680 v4 @ 2.40GHz
-CPU(s) scaling MHz:                      41%
+CPU(s) scaling MHz:                      45%
 Python 3.11.2
 

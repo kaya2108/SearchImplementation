@@ -1,0 +1,24 @@
+Processing 10000 queries (length 40 bp)...
+  Construction time: 10.6320s
+  Search time: 0.2870s
+  Total time: 12.1150s
+  Hits found: 201882
+
+Processing 10000 queries (length 60 bp)...
+  Construction time: 10.4970s
+  Search time: 0.2900s
+  Total time: 11.7280s
+  Hits found: 65140
+
+Processing 10000 queries (length 80 bp)...
+  Construction time: 10.4880s
+  Search time: 0.2900s
+  Total time: 11.7340s
+  Hits found: 50998
+
+Processing 10000 queries (length 100 bp)...
+  Construction time: 10.4980s
+  Search time: 0.2960s
+  Total time: 11.7620s
+  Hits found: 45335
+

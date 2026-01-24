@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/home/mi/srinivasag02/IFA_AA/HA_1/AA/FINAL_REPO/src/fmindex_querrylength.py", line 36, in <module>
+    fm_index = iv.fmindex("../data/fm_index.bin")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Failed to read 8 bytes from input stream! Read 0

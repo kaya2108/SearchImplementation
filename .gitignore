@@ -24,3 +24,4 @@ __pycache__/
 .DS_Store
 .vscode/
 .idea/
+data/hg38_full_genome.fna.gz
