@@ -87,12 +87,12 @@ class SuffixArraySearch:
         return results
 
 def benchmark_query_counts(query_count):
-    reference_file = "hg38_partial.fasta.gz"
+    reference_file = "../data/hg38_partial.fasta.gz"
     references = load_fasta(reference_file)
     reference = references[0]
     print(f"Reference length: {len(reference):,} bp")
     
-    queries_100 = load_fasta("illumina_reads_100.fasta.gz")
+    queries_100 = load_fasta("../data/illumina_reads_100.fasta.gz")
     
     test_queries = queries_100[:query_count]
     print(f"{len(test_queries):,} queries of length 100 bp\n")    
@@ -116,7 +116,7 @@ def benchmark_query_counts(query_count):
     print(f"Hits found:        {total_hits:,}")
 
 def benchmark_query_lengths():
-    reference_file = "hg38_partial.fasta.gz"
+    reference_file = "../data/hg38_partial.fasta.gz"
     references = load_fasta(reference_file)
     reference = references[0]
     print(f"Reference length: {len(reference):,} bp\n")
@@ -125,10 +125,10 @@ def benchmark_query_lengths():
     print(f"Construction time of suffix array: {searcher.construction_time:.4f}s\n")
     
     query_files = {
-        40: "illumina_reads_40.fasta.gz",
-        60: "illumina_reads_60.fasta.gz",
-        80: "illumina_reads_80.fasta.gz",
-        100: "illumina_reads_100.fasta.gz"
+        40: "../data/illumina_reads_40.fasta.gz",
+        60: "../data/illumina_reads_60.fasta.gz",
+        80: "../data/illumina_reads_80.fasta.gz",
+        100: "../data/illumina_reads_100.fasta.gz"
     }
     
     num_queries = 10000

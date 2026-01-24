@@ -1,0 +1,37 @@
+Reference genome: 100,000,000 base pairs
+Total queries available (length 100): 100,000
+Testing with 100 queries (length 100)
+Naive Search
+Running Naive Search
+Processing 100 queries
+Progress:          1/100 (  1.0%) -    10.34s -      0.1 q/s - 1 hits
+Progress:        100/100 (100.0%) -  1020.88s -      0.1 q/s - 40 hits
+Naive search complete
+Queries processed: 100
+Total hits found: 40
+Total time: 1020.8839s
+Time per query: 10208.8389ms
+Queries per second: 0.10
+	Command being timed: "python3 naive_search.py"
+	User time (seconds): 1022.57
+	System time (seconds): 0.16
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 17:02.93
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 301596
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 54323
+	Voluntary context switches: 32
+	Involuntary context switches: 106341
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

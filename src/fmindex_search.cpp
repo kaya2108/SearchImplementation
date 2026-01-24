@@ -53,14 +53,12 @@ int main(int argc, char const* const* argv) {
         seqan3::debug_stream << "done\n";
     }
 
-    // duplicate input until its large enough
-    while (queries.size() < number_of_queries) {
-        auto old_count = queries.size();
-        queries.resize(2 * old_count);
-        std::copy_n(queries.begin(), old_count, queries.begin() + old_count);
+    // Check if we have enough queries
+    if (queries.size() < number_of_queries) {
+        seqan3::debug_stream << "Error: Not enough queries in file. ";
+        seqan3::debug_stream << "Requested: " << number_of_queries << ", Available: " << queries.size() << "\n";
+        return EXIT_FAILURE;
     }
-    queries.resize(number_of_queries); //will reduce the amount of searches
-
     
     auto start = std::chrono::high_resolution_clock::now();
 

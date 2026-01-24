@@ -24,7 +24,7 @@ def load_fasta(filepath):
     
     return sequences
 
-reference_file = "hg38_partial.fasta.gz"
+reference_file = "../data/hg38_partial.fasta.gz"
 references = load_fasta(reference_file)
 reference = references[0]
 print(f"Reference length: {len(reference):,} bp")
@@ -35,6 +35,6 @@ construction_time = time.time() - start
 print(f"FM-index construction completed in {construction_time:.4f}s")
 
 # Save the index
-index_path = "fm_index.bin"
+index_path = "../data/fm_index.bin"
 fm_index.save(index_path)
 print(f"FM-index saved to {index_path}.")

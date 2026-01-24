@@ -33,16 +33,16 @@ def search_queries(fm_index, queries):
 
 # Load FM-index
 start_load = time.time()
-fm_index = iv.fmindex("fm_index.bin")
+fm_index = iv.fmindex("../data/fm_index.bin")
 load_time = time.time() - start_load
 print(f"FM-index loaded in {load_time:.4f}s")
 
 # Query files and lengths
 query_files = {
-    40: "illumina_reads_40.fasta.gz",
-    60: "illumina_reads_60.fasta.gz",
-    80: "illumina_reads_80.fasta.gz",
-    100: "illumina_reads_100.fasta.gz"
+    40: "../data/illumina_reads_40.fasta.gz",
+    60: "../data/illumina_reads_60.fasta.gz",
+    80: "../data/illumina_reads_80.fasta.gz",
+    100: "../data/illumina_reads_100.fasta.gz"
 }
 
 num_queries = 10000

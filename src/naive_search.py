@@ -60,7 +60,7 @@ def benchmark_algorithm(queries, reference):
     
     elapsed = time.time() - start
     
-    print(f"{algorithm_name} complete")
+    print(f"Naive search complete")
     print(f"Queries processed: {len(queries)}")
     print(f"Total hits found: {total_hits}")
     print(f"Total time: {elapsed:.4f}s")
@@ -70,14 +70,14 @@ def benchmark_algorithm(queries, reference):
     return elapsed, total_hits
 
 # Load reference genome
-reference_file = "hg38_partial.fasta.gz"
+reference_file = "../data/hg38_partial.fasta.gz"
 references = load_fasta(reference_file)
 
 reference = references[0]
 print(f"Reference genome: {len(reference):,} base pairs")
 
 # Load queries of length 100 for benchmarking different query counts
-queries_100 = load_fasta("illumina_reads_100.fasta.gz")
+queries_100 = load_fasta("../data/illumina_reads_100.fasta.gz")
 print(f"Total queries available (length 100): {len(queries_100):,}")
 
 print(f"Testing with 100 queries (length 100)")

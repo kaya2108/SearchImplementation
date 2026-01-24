@@ -42,12 +42,12 @@ query_count = int(sys.argv[1])
 
 # Load FM-index
 start_load = time.time()
-fm_index = iv.fmindex("fm_index.bin")
+fm_index = iv.fmindex("../data/fm_index.bin")
 load_time = time.time() - start_load
 print(f"FM-index loaded in {load_time:.4f}s")
 
 # Load queries
-queries_100 = load_fasta("illumina_reads_100.fasta.gz")
+queries_100 = load_fasta("../data/illumina_reads_100.fasta.gz")
 test_queries = queries_100[:query_count]
 print(f"{len(test_queries):,} queries of length 100 bp: ")
 
