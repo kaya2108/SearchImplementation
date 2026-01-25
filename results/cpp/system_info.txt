@@ -1,6 +1,6 @@
 System Information
 CPU(s):                                  56
 Model name:                              Intel(R) Xeon(R) CPU E5-2680 v4 @ 2.40GHz
-CPU(s) scaling MHz:                      41%
+CPU(s) scaling MHz:                      48%
 g++ (Debian 12.2.0-14+deb12u1) 12.2.0
 

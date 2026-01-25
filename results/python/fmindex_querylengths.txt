@@ -1,5 +1,23 @@
-Traceback (most recent call last):
-  File "/home/mi/srinivasag02/IFA_AA/HA_1/AA/FINAL_REPO/src/fmindex_querrylength.py", line 36, in <module>
-    fm_index = iv.fmindex("../data/fm_index.bin")
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-RuntimeError: Failed to read 8 bytes from input stream! Read 0
+FM-index loaded in 0.5396s
+
+Searching with different query lengths (10,000 queries each):
+
+Processing queries of length 40 bp: 
+  Query count: 10,000
+  Search time: 0.1791s
+  Hits found: 20,069
+
+Processing queries of length 60 bp: 
+  Query count: 10,000
+  Search time: 0.1712s
+  Hits found: 6,415
+
+Processing queries of length 80 bp: 
+  Query count: 10,000
+  Search time: 0.1905s
+  Hits found: 4,982
+
+Processing queries of length 100 bp: 
+  Query count: 10,000
+  Search time: 0.2094s
+  Hits found: 4,456

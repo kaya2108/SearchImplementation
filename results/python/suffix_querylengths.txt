@@ -1,28 +1,28 @@
 Reference length: 100,000,000 bp
 
-Construction time of suffix array: 19.8020s
+Construction time of suffix array: 22.8332s
 
 
 Query length: 40 bp
   Queries:     10,000
-  Search time: 0.1911s
+  Search time: 0.2153s
   Hits found:  20,069
-  Time/query:  0.0191ms
+  Time/query:  0.0215ms
 
 Query length: 60 bp
   Queries:     10,000
-  Search time: 0.1886s
+  Search time: 0.2144s
   Hits found:  6,415
-  Time/query:  0.0189ms
+  Time/query:  0.0214ms
 
 Query length: 80 bp
   Queries:     10,000
-  Search time: 0.1967s
+  Search time: 0.2133s
   Hits found:  4,982
-  Time/query:  0.0197ms
+  Time/query:  0.0213ms
 
 Query length: 100 bp
   Queries:     10,000
-  Search time: 0.1847s
+  Search time: 0.2088s
   Hits found:  4,456
-  Time/query:  0.0185ms
+  Time/query:  0.0209ms

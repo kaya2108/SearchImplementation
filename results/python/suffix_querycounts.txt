@@ -4,28 +4,28 @@ Suffix Array - Query Count Benchmark
 Reference length: 100,000,000 bp
 1,000 queries of length 100 bp
 
-Construction time for suffix array: 19.7775s
+Construction time for suffix array: 21.4225s
 
 Results for 1,000 queries: 
-Construction time: 19.7775s
-Search time:       0.0199s
-Total time:        19.7974s
+Construction time: 21.4225s
+Search time:       0.0219s
+Total time:        21.4444s
 Hits found:        448
 	Command being timed: "python3 suffixarray_search.py 1000"
-	User time (seconds): 20.14
-	System time (seconds): 1.69
+	User time (seconds): 21.77
+	System time (seconds): 1.95
 	Percent of CPU this job got: 99%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:21.86
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:23.74
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4828824
+	Maximum resident set size (kbytes): 4828688
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 841050
-	Voluntary context switches: 23
-	Involuntary context switches: 2250
+	Minor (reclaiming a frame) page faults: 840793
+	Voluntary context switches: 17
+	Involuntary context switches: 2395
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 8
@@ -39,28 +39,28 @@ Hits found:        448
 Reference length: 100,000,000 bp
 10,000 queries of length 100 bp
 
-Construction time for suffix array: 19.9010s
+Construction time for suffix array: 21.5992s
 
 Results for 10,000 queries: 
-Construction time: 19.9010s
-Search time:       0.1841s
-Total time:        20.0851s
+Construction time: 21.5992s
+Search time:       0.2107s
+Total time:        21.8099s
 Hits found:        4,456
 	Command being timed: "python3 suffixarray_search.py 10000"
-	User time (seconds): 20.90
-	System time (seconds): 1.86
+	User time (seconds): 22.23
+	System time (seconds): 1.84
 	Percent of CPU this job got: 99%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:22.78
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:24.09
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4828812
+	Maximum resident set size (kbytes): 4828760
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 840885
-	Voluntary context switches: 18
-	Involuntary context switches: 2362
+	Minor (reclaiming a frame) page faults: 841331
+	Voluntary context switches: 22
+	Involuntary context switches: 2444
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 8
@@ -74,28 +74,28 @@ Hits found:        4,456
 Reference length: 100,000,000 bp
 100,000 queries of length 100 bp
 
-Construction time for suffix array: 19.2941s
+Construction time for suffix array: 21.7212s
 
 Results for 100,000 queries: 
-Construction time: 19.2941s
-Search time:       1.7909s
-Total time:        21.0850s
+Construction time: 21.7212s
+Search time:       2.1053s
+Total time:        23.8264s
 Hits found:        45,334
 	Command being timed: "python3 suffixarray_search.py 100000"
-	User time (seconds): 21.44
-	System time (seconds): 1.79
+	User time (seconds): 24.45
+	System time (seconds): 1.99
 	Percent of CPU this job got: 99%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:23.26
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:26.47
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4829324
+	Maximum resident set size (kbytes): 4828764
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 841109
-	Voluntary context switches: 33
-	Involuntary context switches: 2385
+	Minor (reclaiming a frame) page faults: 840836
+	Voluntary context switches: 15
+	Involuntary context switches: 2654
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 8
