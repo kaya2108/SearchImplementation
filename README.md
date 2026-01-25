@@ -60,7 +60,39 @@ The benchmarks expect the following files in the `data/` directory:
 
 ---
 
+## Notes on Large Files (Full Genome)
+
+This repository also supports running the **C++ FM-index pipeline on the full GRCh38 human genome** (RefSeq assembly **GCF_000001405.26**). Since the full genome FASTA is large, it is **not included** in the repository and must be downloaded separately.
+
+### 1) Download GRCh38 (GCF_000001405.26) from NCBI
+
+Download the genome from the NCBI Datasets page:
+
+* https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001405.26/
+
+
+### 2) Compress the genome FASTA
+
+From the repository root:
+
+```bash
+gzip -c GCF_000001405.26_GRCh38_genomic.fna > data/hg38_full_genome.fna.gz
+```
+
+### 3) Run the C++ benchmarks on the full genome
+
+Run the C++ benchmark script as normal.
+
+
+Typical full-genome runs will take longer and require significantly more memory than the partial-genome benchmarks.
+
+---
+
+
 ## Running Benchmarks
+
+Both benchmark scripts support command-line flags so you can run only specific methods/tests.
+If no options are given, the scripts run **everything** by default.
 
 ### Python Benchmarks
 
@@ -79,6 +111,49 @@ chmod +x benchmark_py.sh
 4. Runs query length benchmarks (40, 60, 80, 100 bp with 10K queries each)
    - Suffix array search
    - FM-index search
+
+#### Python Benchmark Options
+
+**Methods**
+- `--naive` : Run naive search benchmark
+- `--suffix` : Run suffix array benchmarks
+- `--fm` : Run FM-index benchmarks
+
+**Tests**
+- `--counts` : Run query-count benchmarks (runtime + memory via `/usr/bin/time -v`)
+- `--ql` : Run query-length benchmarks (runtime only)
+
+**Other**
+- `--no-construct` : Skip FM-index construction step
+- `--all-except-naive` : Run everything except naive search
+- `-h, --help` : Show help
+
+#### Examples
+
+Run everything (default):
+```bash
+./benchmark_py.sh
+```
+
+Run only suffix query-count benchmark:
+```bash
+./benchmark_py.sh --suffix --counts
+```
+
+Run only FM-index query-length benchmark:
+```bash
+./benchmark_py.sh --fm --ql
+```
+
+Run query-count benchmarks for both suffix + FM:
+```bash
+./benchmark_py.sh --counts
+```
+
+Skip FM-index construction:
+```bash
+./benchmark_py.sh --fm --counts --no-construct
+```
 
 **Output:** Results saved in `results/python/`
 
@@ -101,6 +176,56 @@ chmod +x benchmark_cpp.sh
    - Suffix array search
    - FM-index search
 
+#### C++ Benchmark Options
+
+**Methods**
+- `--naive` : Run naive search benchmark
+- `--suffix` : Run suffix array benchmarks
+- `--fm` : Run FM-index benchmarks
+
+**Tests**
+- `--counts` : Run query-count benchmarks (runtime + memory via `/usr/bin/time -v`)
+- `--ql` : Run query-length benchmarks
+
+**Index scope (FM only)**
+- `--partial` : Only run partial genome index/queries
+- `--full` : Only run full genome index/queries (only FM query-length benchmark)
+
+**Build / construct**
+- `--no-build` : Skip CMake build step
+- `--no-construct` : Skip FM-index construction steps (assumes `.index` exists)
+
+**Other**
+- `-h, --help` : Show help
+
+#### Examples
+
+Run everything (default):
+```bash
+./benchmark_cpp.sh
+```
+
+Run only suffix query-count benchmark:
+```bash
+./benchmark_cpp.sh --suffix --counts
+```
+
+Run FM-index query-length benchmarks only on partial genome:
+```bash
+./benchmark_cpp.sh --fm --ql --partial
+```
+
+Run FM-index full genome query-length benchmarks without rebuilding index:
+```bash
+./benchmark_cpp.sh --fm --ql --full --no-construct
+```
+
+Skip building the C++ project:
+```bash
+./benchmark_cpp.sh --no-build --counts
+```
+
+
 **Output:** Results saved in `results/cpp/`
 
 ---
@@ -113,19 +238,21 @@ After running the benchmarks, you'll find detailed results in the `results/` dir
 - `system_info.txt` - System specifications
 - `naive_search_100.txt` - Naive search baseline (100 queries)
 - `fmindex_construction.txt` - FM-index construction time and memory
-- `task4_suffix_counts.txt` - Suffix array performance vs query count
-- `task4_fmindex_counts.txt` - FM-index performance vs query count
-- `task5_suffix_lengths.txt` - Suffix array performance vs query length
-- `task5_fmindex_lengths.txt` - FM-index performance vs query length
+- `suffix_querycounts.txt` - Suffix array performance vs query count
+- `fmindex_querycounts.txt` - FM-index performance vs query count
+- `suffix_querylengths.txt` - Suffix array performance vs query length
+- `fmindex_querylengths.txt` - FM-index performance vs query length
 
 ### C++ Results (`results/cpp/`)
 - `system_info.txt` - System specifications
 - `naive_search_100.txt` - Naive search baseline (100 queries)
-- `fmindex_construction.txt` - FM-index construction time and memory
-- `task4_suffix_counts.txt` - Suffix array performance vs query count
-- `task4_fmindex_counts.txt` - FM-index performance vs query count
-- `task5_suffix_lengths.txt` - Suffix array performance vs query length
-- `task5_fmindex_lengths.txt` - FM-index performance vs query length
+- `fmindex_construction.txt` - FM-index construction time and memory (partial genome)
+- `fmindex_construction_full_genome.txt` - FM-index construction time and memory (full genome)
+- `suffix_querycounts.txt` - Suffix array performance vs query count
+- `fmindex_querycounts.txt` - FM-index performance vs query count (partial genome)
+- `suffix_querylengths.txt` - Suffix array performance vs query length
+- `fmindex_querylengths.txt` - FM-index performance vs query length (partial genome)
+- `fmindex_querylengths_full_genome.txt` - FM-index performance vs query length (full genome)
 
 ---
 
